@@ -11,7 +11,7 @@
     <Juego />
     </div>
 
-    <div class="jumbotron jumbotron-fluid">
+   <!--  <div class="jumbotron jumbotron-fluid">
       <div class="row">
         <Barra nombreBarra="Barra Jugador" color=red :salud=100 icono="fa-angry"  />
         <Barra nombreBarra="Barra Monstruo" color=blue :salud=100 icono="../assets/imgs/monstruo1.png" />
@@ -24,7 +24,7 @@
     
     <div class="jumbotron jumbotron-fluid">
       <Logs :turnos="turnos" />
-    </div>
+    </div> -->
     
 
   </div>
@@ -32,17 +32,17 @@
 
 <script>
 import Juego from './components/Juego.vue'
-import Barra from './components/Barra.vue'
+/* import Barra from './components/Barra.vue'
 import Botones from './components/Botones.vue'
 import Logs from './components/Logs.vue'
-
+ */
 export default {
   name: 'App',
   components: {
     Juego,
-    Barra,
+ /*    Barra,
     Botones,
-    Logs
+    Logs */
   }
 }
 </script>

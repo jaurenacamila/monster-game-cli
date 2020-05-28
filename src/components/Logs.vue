@@ -1,7 +1,6 @@
 <template>
 
   <section class="src-components-logs">
-    <h1>Logs</h1>
      <div class="small-12 columns" >
             <ul>
                 <li v-for="(turno,index) in turnos" :key="index"

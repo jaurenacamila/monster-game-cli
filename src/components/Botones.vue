@@ -1,7 +1,7 @@
 <template>
 
   <section class="src-components-botones">
-    <h1>Botones</h1>
+   
     <section class="row controls" v-if="!hayUnaPartidaEnJuego">
         <div class="small-12 columns">
             <button id="start-game"  @click="empezarPartida">
@@ -21,7 +21,7 @@
 
 </template>
 
-<script lang="js">
+<script>
 
   export default  {
     name: 'src-components-botones',

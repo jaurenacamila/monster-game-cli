@@ -1,7 +1,5 @@
 <template>
   <section class="src-components-juego">
-    <h1>Juego</h1>
-
      <section class="row">
         <div class="small-6 columns">
             <Barra :salud="saludJugador" icono="fa-angry" color="goldenrod" />
