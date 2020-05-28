@@ -2,20 +2,19 @@
   <div id="app" class="container">
     <div class="jumbotron jumbotron-fluid">
       <div class="container-fluid">
-          <h1>Monster Game</h1>
-          <p>Un golpe es tuyo, el otro del montruo. Veamos quien gana!</p>
+        <h1>Monster Game</h1>
+        <p>Un golpe es tuyo, el otro del montruo. Veamos quien gana!</p>
       </div>
     </div>
 
     <Juego />
+
     <div class="row">
-      <div class="div">
-    <Barra nombreBarra="Barra Jugador" />
+      <Barra nombreBarra="Barra Jugador" color=red salud=99 />
+      <Barra nombreBarra="Barra Monstruo" color=blue salud=98 />
     </div>
-    <div class="div">
-    <Barra nombreBarra="Barra Monstruo"/>
-    </div>
-    </div>
+
+    
     
 
   </div>
@@ -41,7 +40,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0a0a0a;
   margin-top: 60px;
 }
 
