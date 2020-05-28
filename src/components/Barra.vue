@@ -1,5 +1,6 @@
 <template>
   <section class="src-components-barra">
+    <h1>Barras</h1>
     <h5>{{nombreBarra}}</h5>
              <h1 class="text-center"><i :class="['fas', icono, 'fa-2x']"></i></h1>
             <div class="curarthbar">
@@ -13,7 +14,7 @@
 
 </template>
 
-<script lang="js">
+<script>
 
   export default  {
     name: 'src-components-barra',

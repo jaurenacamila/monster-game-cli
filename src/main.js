@@ -5,6 +5,8 @@ import 'jquery'
 import 'popper.js'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './assets/css/foundation.min.css'
+
 
 Vue.config.productionTip = false
 

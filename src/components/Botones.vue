@@ -1,7 +1,7 @@
 <template>
 
   <section class="src-components-botones">
-    <h1>botones Component</h1>
+    <h1>Botones</h1>
     <section class="row controls" v-if="!hayUnaPartidaEnJuego">
         <div class="small-12 columns">
             <button id="start-game"  @click="empezarPartida">
@@ -25,7 +25,16 @@
 
   export default  {
     name: 'src-components-botones',
-    props: [],
+   // props: [],
+
+    props: {
+      hayUnaPartidaEnJuego: Boolean,
+      empezarPartida: Function,
+      atacar: Function,
+      ataqueEspecial: Function,
+      curar: Function,
+      terminarPartida: Function,
+    },
     mounted () {
 
     },
@@ -35,6 +44,7 @@
       }
     },
     methods: {
+     
 
     },
     computed: {
@@ -49,4 +59,52 @@
   .src-components-botones {
 
   }
+
+  button {
+    font-size: 20px;
+    background-color: #c5ccc6;
+    padding: 12px;
+    box-shadow: 0 1px 1px black;
+    margin: 10px;
+}
+
+#empezar-partida {
+    background-color: #c5ccc6;
+}
+
+#empezar-partida:hover {
+    background-color: #a5a7a5;
+}
+
+#atacar {
+    background-color: #c5ccc6;
+}
+
+#atacar:hover {
+    background-color: #a5a7a5;
+}
+
+#ataque-especial {
+    background-color: #c5ccc6;
+}
+
+#ataque-especial:hover {
+    background-color: #a5a7a5;
+}
+
+#curar {
+    background-color: #c5ccc6;
+}
+
+#curar:hover {
+    background-color: #a5a7a5;
+}
+
+#rendirse {
+    background-color: #c5ccc6;
+}
+
+#rendirse:hover {
+    background-color: #a5a7a5;
+}
 </style>
