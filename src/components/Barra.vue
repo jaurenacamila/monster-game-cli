@@ -1,6 +1,5 @@
 <template>
   <section class="src-components-barra">
-    <h5>{{nombreBarra}}</h5>
              <h1 class="text-center"><i :class="['fas', icono, 'fa-2x']"></i></h1>
             <div class="curarthbar">
                 <div class="curarthbar text-center" 
@@ -20,7 +19,6 @@
    // props: ['nombreBarra' , 'color', 'icono', 'salud'],
 
    props: {
-     nombreBarra:String,
      color:String,
      icono:String,
      salud:Number
@@ -51,9 +49,6 @@
 <style scoped lang="css">
   .src-components-barra {
 
-  }
-  h5 {
-    color:darkmagenta
   }
 
   .text-center {

@@ -2,10 +2,10 @@
   <section class="src-components-juego">
      <section class="row">
         <div class="small-6 columns">
-            <Barra :salud="saludJugador" icono="fa-angry" color="goldenrod" />
+            <Barra :salud="saludJugador" icono="fa-grin-squint" color="goldenrod" />
         </div>
         <div class="small-6 columns">
-            <Barra :salud="saludMonstruo" icono="fa-pastafarianism" color="rgb(3, 110, 12)"/>
+            <Barra :salud="saludMonstruo" icono="fab fa-optin-monster" color="rgb(3, 110, 12)"/>
         </div>
     </section>
     <hr>
