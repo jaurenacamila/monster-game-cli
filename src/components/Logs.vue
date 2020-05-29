@@ -2,14 +2,13 @@
 
   <section class="src-components-logs">
      <div class="small-12 columns" >
-            <div>
-                <li v-for="(turno,index) in turnos" :key="index"
+          <div>
+              <li v-for="(turno,index) in turnos" :key="index"
                 :class="cssEvento(turno)"
-                :style="{'text-align': turno.esJugador? 'left' : 'right' ,'opacity':index <=1?1:0.5}">
-                    {{ turno.text }} 
-                </li>
-            </div>
-        </div>
+                :style="{'text-align': turno.esJugador? 'left' : 'right' ,'opacity':index <=1?1:0.5}">{{ turno.text }} 
+              </li>
+          </div>
+     </div>
   </section>
 
 </template>
@@ -69,17 +68,10 @@
     font-size: 22px;
 }
 
-.ul {
-    font-weight: bold;
-    text-transform: uppercase;
+.li {
     list-style-type: none;
-}
-
-.ul li {
-    margin: 50px;
     text-align: center;
     padding:5px;
-    list-style-type: none;
 }
 
 .player-turno {

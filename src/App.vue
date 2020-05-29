@@ -8,7 +8,8 @@
     </div>
 
     <div class="jumbotron jumbotron-fluid">
-    <Juego />
+          <Juego />
+     
     </div>
     
 
