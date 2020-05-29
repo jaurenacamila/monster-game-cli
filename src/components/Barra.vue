@@ -55,12 +55,16 @@
     text-align: center;
 }
   .curarthbar {
-    width: 80%;
+    width: 100%;
     height: 40px;
     background-color: #eee;
     margin: auto;
     transition: width 500ms;
     font-size: 22px;
+}
+
+i {
+  text-align: center;
 }
  
 </style>

@@ -2,10 +2,10 @@
   <section class="src-components-juego">
      <section class="row">
         <div class="small-6 columns">
-            <Barra :salud="saludJugador" icono="fa-grin-squint" color="goldenrod" />
+            <Barra :salud="saludJugador" icono="fa-grin-squint" color="rgb(173, 104, 13)" />
         </div>
         <div class="small-6 columns">
-            <Barra :salud="saludMonstruo" icono="fab fa-optin-monster" color="rgb(3, 110, 12)"/>
+            <Barra :salud="saludMonstruo" icono="fab fa-optin-monster" color="rgb(5, 107, 73)"/>
         </div>
     </section>
     <hr>
@@ -19,9 +19,8 @@
         :terminarPartida="terminarPartida" />
 
     <hr>
-
-         <Logs :turnos="turnos" />
-
+          <Logs :turnos="turnos" />
+        
     
   </section>
 </template>
@@ -162,7 +161,9 @@ import Logs from './Logs.vue'
 
 img {
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(70, 2, 2, 0.5);
+    background-color:rgb(5, 107, 73);
 }
+
 
 </style>

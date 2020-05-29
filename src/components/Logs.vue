@@ -2,19 +2,19 @@
 
   <section class="src-components-logs">
      <div class="small-12 columns" >
-            <ul>
+            <div>
                 <li v-for="(turno,index) in turnos" :key="index"
                 :class="cssEvento(turno)"
                 :style="{'text-align': turno.esJugador? 'left' : 'right' ,'opacity':index <=1?1:0.5}">
                     {{ turno.text }} 
                 </li>
-            </ul>
+            </div>
         </div>
   </section>
 
 </template>
 
-<script lang="js">
+<script>
 
   export default  {
     name: 'src-components-logs',
@@ -32,7 +32,7 @@
       }
     },
     methods: {
-   cssEvento(turno) {
+    cssEvento(turno) {
             //Este return de un objeto es prque vue asi lo requiere, pero ponerlo acá queda mucho mas entendible en el codigo HTML.
             return {
                 'player-turno': turno.esJugador,
@@ -69,30 +69,30 @@
     font-size: 22px;
 }
 
-.log ul {
-    list-style: none;
+.ul {
     font-weight: bold;
     text-transform: uppercase;
-
+    list-style-type: none;
 }
 
-.log ul li {
-    margin: 5px;
+.ul li {
+    margin: 50px;
     text-align: center;
     padding:5px;
-
+    list-style-type: none;
 }
 
-.log ul .player-turno {
-    color: rgb(39, 97, 131);
-    background-color: #b3beff;
+.player-turno {
+    padding-left: 10px;
+    color: whitesmoke;
+    background-color:rgb(206, 138, 50);
+  
 }
 
-.log ul .monster-turno {
-    text-align: center;
-    color:rgb(206, 98, 165);
-    background-color:#ffc0c1;
-    
+.monster-turno {
+    padding-right: 10px;
+    color:whitesmoke;
+    background-color:rgb(47, 151, 117);
 }
 
 </style>
